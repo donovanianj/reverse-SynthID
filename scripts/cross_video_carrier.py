@@ -158,7 +158,7 @@ def main() -> None:
     over = np.clip(0.35 * frame / 255 + 1.2 * plt.get_cmap("inferno")(lspec)[..., :3] * lspec[..., None] ** 0.7, 0, 1)
     ax[1, 0].imshow(over)
     ax[1, 0].scatter(xs, ys, s=40, facecolors="none", edgecolors="cyan", linewidths=1.2)
-    ax[1, 0].set_title(f"log|FFT| over frame ({os.path.basename(args.videos[args.overlay_video])})\n"
+    ax[1, 0].set_title(f"log|FFT| over frame ({os.path.basename(args.videos[args.overlay_video])[:32]})\n"
                        f"cyan = cross-video carrier bins ({len(xs)})")
     ax[1, 1].imshow(norm(pattern), cmap="RdBu_r")
     ax[1, 1].set_title("Consensus carrier pattern (spatial)")
