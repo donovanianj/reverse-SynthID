@@ -1,5 +1,9 @@
 # Paired analysis of the still (`1.jpg`, 1918x1072 JPEG) against its source frame
 
+> **Correction (2026-10-04):** Google's SynthID Detector reports SynthID in unedited frames of the
+> original micrograph video and none in negative controls; see `artifacts/SYNTHID_DETECTOR_RESULTS.md`.
+> Frame 6 is itself watermarked, so subtracting it cancels the watermark rather than isolating it; the null result below is expected and does not mean the still is clean.
+
 Exploratory scripts in this folder (paths point at a session scratchpad; adjust before reuse).
 
 ## What the still is
@@ -33,5 +37,5 @@ not uniform), which is why the raw-still V4 numbers must be read against frame 6
 ## Conclusion
 No SynthID carrier recognisable by any model available here (Veo/Gemini 720p video carrier;
 Gemini-3.1-flash-image and nano-banana-pro image codebooks) is present in the still beyond what its
-own un-watermarked source frame shows. If the still carries SynthID, it is a variant not covered
+source frame shows (frame 6, later confirmed watermarked by Google's detector). If the still carries SynthID, it is a variant not covered
 by these models, and its pixel-domain footprint in flat regions is <= ~0.3 luma levels rms.

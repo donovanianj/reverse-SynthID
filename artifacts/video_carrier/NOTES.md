@@ -1,5 +1,9 @@
 # 1st-2026_Xu_Ning_e42800_f27376.mp4 — fluorescence micrograph video
 
+> **Correction (2026-10-04):** Google's SynthID Detector reports SynthID in unedited frames of the
+> original micrograph video and none in negative controls; see `artifacts/SYNTHID_DETECTOR_RESULTS.md`.
+> The null results below are false negatives of the 720p-carrier method, not evidence the video is real footage.
+
 1920x1072, 10 fps, 19.3 s, H.264 ~6.8 Mb/s, `encoder=Lavf57.25.100` (FFmpeg, not Google).
 (Uploaded twice; both copies are byte-identical, sha256 8dcdf401...)
 

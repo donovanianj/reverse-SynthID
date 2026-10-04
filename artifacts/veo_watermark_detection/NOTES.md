@@ -1,5 +1,9 @@
 # Detection: original micrograph video, full length
 
+> **Correction (2026-10-04):** Google's SynthID Detector reports SynthID in unedited frames of the
+> original micrograph video and none in negative controls; see `artifacts/SYNTHID_DETECTOR_RESULTS.md`.
+> The original-video "no trace" conclusion below is a false negative of the pattern-based detector, which only recognises the fixed 720p carrier.
+
 `scripts/detect_veo_watermark.py`. Statistic S = mean over the 11 carrier bins of
 |temporal mean phasor| x cos(phase - key phase); null = structure-matched random frequencies
 (same fx values, random fy in band, off the macroblock grid) with random key phases.
