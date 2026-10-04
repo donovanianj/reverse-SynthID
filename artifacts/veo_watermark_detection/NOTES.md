@@ -39,3 +39,42 @@ All nine offsets: |z| < 1.7, per-frame agreement 42–58% (chance = 50%).
 geometries where the same carrier, put through the same processing, is detected at z = 4.9 (Veo)
 and z = 11.2 (Gemini). Not covered: a source generated natively at 1080p (carrier unknown at that
 resolution), heavier processing (e.g. denoising, AI upscaling, re-generation), or non-Google generators.
+
+## Matched-content control: Veo 3.1 remake of the micrograph (1920x1080, 24 fps, 8 s, 12 Mb/s)
+
+`Generated_Video_October_04_2026_-_12_26PM.mp4`, generated with the original as template; not used
+in the model.
+
+| input | test | result |
+|---|---|---|
+| remake, native 1080p, downscaled to 720p | phase-aware | S +0.17, **z +2.9, p 0.002**, 79% frames > 0 |
+| remake, native 1080p | phase-free, cycles/frame | z +0.8 (static video: high background coherence) |
+| remake through original's pipeline (crop to 1072, 10 fps, x264 6.8 Mb/s) | best offset | **dy=4 (true): z +2.8, Bonferroni p 0.018**, 81% frames > 0 (80 frames) |
+| original (193 frames) | best offset | dy=8: z +1.4, Bonferroni p 0.70, ~55% frames > 0 |
+
+Scaled to the original's 193 frames, a watermarked equivalent would be expected near z ~4.4.
+The 720p carrier is present but ~2x weaker in the native 1080p Veo output than in 720p outputs; a
+native-1080p carrier key cannot be learned from a single 1080p video (needs >= 2 for consensus).
+
+## Single still image (`1.jpg`, 1918x1072 JPEG, no EXIF)
+
+The still is frame 6 (t = 0.6 s) of the original video, shifted 1 px horizontally
+(r = 0.985, mean |diff| 5 levels: a separate grab/encode of the same frame).
+
+`scripts/detect_veo_watermark_still.py` (single-frame score, 27 pad offsets, Bonferroni):
+
+| image | best z | Bonferroni p |
+|---|---|---|
+| **user still** | +1.8 (s +0.39) | **0.91** |
+| original frames (t = 0.6, 1, 3, 5, 7 s) | +0.5 to +2.3 | 0.09–1.0 |
+| Veo 3.1 remake frames (1080p) | +0.9 to +2.2 | 0.01–0.19 |
+| Veo 3.1 goldfish frames (720p) | +0.5 to +2.9 | 0.002–0.30 |
+| x264 noise-texture frames | -1.5 to -0.2 | > 0.5 |
+
+A single frame carries too little of this sub-LSB carrier for a reliable decision: known-Veo frames
+are often not significant individually. The still is therefore inconclusive on its own; since it is
+a frame of the original video, the full-video result (no carrier) is the stronger evidence.
+
+The repo's still-image SynthID detectors (`robust_extractor.detect_array`, Gemini *image* codebooks)
+return "not watermarked" for every frame tested, including known-Veo frames, so they are not
+informative for Veo video frames (different watermark / resolution profiles).

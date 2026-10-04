@@ -1,0 +1,43 @@
+{
+  "model": "artifacts/veo_watermark_model/model.json",
+  "results": [
+    {
+      "video": "bd3ec56d-Generated_Video_October_04_2026_-_12_26PM.mp4",
+      "shape": [
+        1080,
+        1920
+      ],
+      "fps": 24.0,
+      "tests": [
+        {
+          "hypothesis": "phase-free cycles/frame",
+          "coh_key": 0.2868310213088989,
+          "coh_null": 0.25624725222587585,
+          "z": 0.7490658164024353,
+          "p": 0.2221944513871532,
+          "frames": 192
+        },
+        {
+          "hypothesis": "resample dy=0",
+          "S": 0.1741381189069613,
+          "z": 2.890101533155139,
+          "p": 0.0022494376405898524,
+          "frames": 192,
+          "per_frame_mean": 0.17413810620721026,
+          "per_frame_frac_pos": 0.7864583333333334
+        }
+      ],
+      "best_resample": {
+        "hypothesis": "resample dy=0",
+        "S": 0.1741381189069613,
+        "z": 2.890101533155139,
+        "p": 0.0022494376405898524,
+        "frames": 192,
+        "per_frame_mean": 0.17413810620721026,
+        "per_frame_frac_pos": 0.7864583333333334,
+        "p_bonferroni": 0.0022494376405898524,
+        "n_hypotheses": 1
+      }
+    }
+  ]
+}

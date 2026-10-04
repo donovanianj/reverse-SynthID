@@ -1,0 +1,115 @@
+{
+  "model": "artifacts/veo_watermark_model/model.json",
+  "results": [
+    {
+      "video": "v5_origpipeline.mp4",
+      "shape": [
+        1072,
+        1920
+      ],
+      "fps": 10.0,
+      "tests": [
+        {
+          "hypothesis": "phase-free cycles/frame",
+          "coh_key": 0.2554309666156769,
+          "coh_null": 0.24897737801074982,
+          "z": 0.16439934074878693,
+          "p": 0.4176455886028493,
+          "frames": 80
+        },
+        {
+          "hypothesis": "resample dy=0",
+          "S": -0.08209482656066878,
+          "z": -1.3649902273081242,
+          "p": 0.9117720569857536,
+          "frames": 80,
+          "per_frame_mean": -0.08209484575955596,
+          "per_frame_frac_pos": 0.4125
+        },
+        {
+          "hypothesis": "resample dy=1",
+          "S": -0.07576798269709538,
+          "z": -1.2806320776949967,
+          "p": 0.8982754311422144,
+          "frames": 80,
+          "per_frame_mean": -0.07576798094740395,
+          "per_frame_frac_pos": 0.4125
+        },
+        {
+          "hypothesis": "resample dy=2",
+          "S": 0.0223595473556517,
+          "z": 0.345217348601902,
+          "p": 0.36440889777555613,
+          "frames": 80,
+          "per_frame_mean": 0.02235952517448573,
+          "per_frame_frac_pos": 0.5125
+        },
+        {
+          "hypothesis": "resample dy=3",
+          "S": 0.14355912734861584,
+          "z": 2.380978505787551,
+          "p": 0.010247438140464884,
+          "frames": 80,
+          "per_frame_mean": 0.1435591266196495,
+          "per_frame_frac_pos": 0.7625
+        },
+        {
+          "hypothesis": "resample dy=4",
+          "S": 0.1734763000908337,
+          "z": 2.812081964170044,
+          "p": 0.001999500124968758,
+          "frames": 80,
+          "per_frame_mean": 0.17347629897629188,
+          "per_frame_frac_pos": 0.8125
+        },
+        {
+          "hypothesis": "resample dy=5",
+          "S": 0.09265260368508123,
+          "z": 1.5149643818403835,
+          "p": 0.06623344163959011,
+          "frames": 80,
+          "per_frame_mean": 0.09265259448183413,
+          "per_frame_frac_pos": 0.6625
+        },
+        {
+          "hypothesis": "resample dy=6",
+          "S": -0.0186489330666197,
+          "z": -0.2872321656547163,
+          "p": 0.625343664083979,
+          "frames": 80,
+          "per_frame_mean": -0.01864893991637275,
+          "per_frame_frac_pos": 0.5125
+        },
+        {
+          "hypothesis": "resample dy=7",
+          "S": -0.11703330121909405,
+          "z": -1.860287304645814,
+          "p": 0.9652586853286679,
+          "frames": 80,
+          "per_frame_mean": -0.11703331600470968,
+          "per_frame_frac_pos": 0.275
+        },
+        {
+          "hypothesis": "resample dy=8",
+          "S": -0.15933246414419427,
+          "z": -2.6623496438373127,
+          "p": 0.9957510622344414,
+          "frames": 80,
+          "per_frame_mean": -0.1593324694358734,
+          "per_frame_frac_pos": 0.25
+        }
+      ],
+      "best_resample": {
+        "hypothesis": "resample dy=4",
+        "S": 0.1734763000908337,
+        "z": 2.812081964170044,
+        "p": 0.001999500124968758,
+        "frames": 80,
+        "per_frame_mean": 0.17347629897629188,
+        "per_frame_frac_pos": 0.8125,
+        "p_bonferroni": 0.017995501124718823,
+        "n_hypotheses": 9
+      }
+    }
+  ]
+}
