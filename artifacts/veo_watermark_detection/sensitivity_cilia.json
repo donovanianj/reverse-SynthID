@@ -1,0 +1,134 @@
+{
+  "model": "/tmp/claude-0/-home-user-reverse-SynthID/b7b126f1-18e5-5ce9-b2fa-a45ca795acac/scratchpad/model_loo_nocilia/model.json",
+  "results": [
+    {
+      "video": "778763a5-gemini_generated_video_2C5D4F75.mp4",
+      "shape": [
+        720,
+        1280
+      ],
+      "fps": 24.0,
+      "tests": [
+        {
+          "hypothesis": "native-720p",
+          "S": 0.4750763640447628,
+          "z": 15.212433349174352,
+          "p": 0.00024993751562109475,
+          "frames": 240,
+          "per_frame_mean": 0.47507634713672964,
+          "per_frame_frac_pos": 0.9541666666666667
+        }
+      ]
+    },
+    {
+      "video": "posctrl_cilia_1072.mp4",
+      "shape": [
+        1072,
+        1920
+      ],
+      "fps": 10.0,
+      "tests": [
+        {
+          "hypothesis": "phase-free cycles/frame",
+          "coh_key": 0.20795106887817383,
+          "coh_null": 0.14474782347679138,
+          "z": 2.696089506149292,
+          "p": 0.005998500374906273,
+          "frames": 100
+        },
+        {
+          "hypothesis": "resample dy=0",
+          "S": -0.09407689882352764,
+          "z": -2.76425755236977,
+          "p": 0.9972506873281679,
+          "frames": 100,
+          "per_frame_mean": -0.09407688949109053,
+          "per_frame_frac_pos": 0.33
+        },
+        {
+          "hypothesis": "resample dy=1",
+          "S": -0.1825485971521453,
+          "z": -5.217355207367613,
+          "p": 1.0,
+          "frames": 100,
+          "per_frame_mean": -0.18254862352032838,
+          "per_frame_frac_pos": 0.22
+        },
+        {
+          "hypothesis": "resample dy=2",
+          "S": -0.07281451574154363,
+          "z": -2.1860676237323613,
+          "p": 0.9877530617345663,
+          "frames": 100,
+          "per_frame_mean": -0.0728145114266509,
+          "per_frame_frac_pos": 0.39
+        },
+        {
+          "hypothesis": "resample dy=3",
+          "S": 0.2053779919662755,
+          "z": 5.9699542683412234,
+          "p": 0.00024993751562109475,
+          "frames": 100,
+          "per_frame_mean": 0.20537800251107347,
+          "per_frame_frac_pos": 0.83
+        },
+        {
+          "hypothesis": "resample dy=4",
+          "S": 0.37532461896772223,
+          "z": 11.199450207589207,
+          "p": 0.00024993751562109475,
+          "frames": 100,
+          "per_frame_mean": 0.37532462281129997,
+          "per_frame_frac_pos": 0.9
+        },
+        {
+          "hypothesis": "resample dy=5",
+          "S": 0.19933388234075328,
+          "z": 5.574678274100031,
+          "p": 0.00024993751562109475,
+          "frames": 100,
+          "per_frame_mean": 0.1993338638720101,
+          "per_frame_frac_pos": 0.85
+        },
+        {
+          "hypothesis": "resample dy=6",
+          "S": -0.13361899266905322,
+          "z": -3.7375103924959965,
+          "p": 1.0,
+          "frames": 100,
+          "per_frame_mean": -0.1336189961863553,
+          "per_frame_frac_pos": 0.29
+        },
+        {
+          "hypothesis": "resample dy=7",
+          "S": -0.3098766813320069,
+          "z": -8.952579954425238,
+          "p": 1.0,
+          "frames": 100,
+          "per_frame_mean": -0.3098767114815789,
+          "per_frame_frac_pos": 0.07
+        },
+        {
+          "hypothesis": "resample dy=8",
+          "S": -0.19843686795294796,
+          "z": -5.542941750128198,
+          "p": 1.0,
+          "frames": 100,
+          "per_frame_mean": -0.19843685102927996,
+          "per_frame_frac_pos": 0.14
+        }
+      ],
+      "best_resample": {
+        "hypothesis": "resample dy=4",
+        "S": 0.37532461896772223,
+        "z": 11.199450207589207,
+        "p": 0.00024993751562109475,
+        "frames": 100,
+        "per_frame_mean": 0.37532462281129997,
+        "per_frame_frac_pos": 0.9,
+        "p_bonferroni": 0.002249437640589853,
+        "n_hypotheses": 9
+      }
+    }
+  ]
+}

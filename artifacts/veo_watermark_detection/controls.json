@@ -1,0 +1,229 @@
+{
+  "model": "/tmp/claude-0/-home-user-reverse-SynthID/b7b126f1-18e5-5ce9-b2fa-a45ca795acac/scratchpad/model_loo_noveo/model.json",
+  "results": [
+    {
+      "video": "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4",
+      "shape": [
+        720,
+        1280
+      ],
+      "fps": 24.0,
+      "tests": [
+        {
+          "hypothesis": "native-720p",
+          "S": 0.413593749289528,
+          "z": 5.842310259719374,
+          "p": 0.00024993751562109475,
+          "frames": 192,
+          "per_frame_mean": 0.4135937539576198,
+          "per_frame_frac_pos": 0.9895833333333334
+        }
+      ]
+    },
+    {
+      "video": "posctrl_veo_720_x264.mp4",
+      "shape": [
+        720,
+        1280
+      ],
+      "fps": 10.0,
+      "tests": [
+        {
+          "hypothesis": "native-720p",
+          "S": 0.3446524092749132,
+          "z": 4.7606050622740135,
+          "p": 0.00024993751562109475,
+          "frames": 80,
+          "per_frame_mean": 0.34465238909890095,
+          "per_frame_frac_pos": 0.9625
+        }
+      ]
+    },
+    {
+      "video": "posctrl_veo_1072.mp4",
+      "shape": [
+        1072,
+        1920
+      ],
+      "fps": 10.0,
+      "tests": [
+        {
+          "hypothesis": "phase-free cycles/frame",
+          "coh_key": 0.37692177295684814,
+          "coh_null": 0.3133905529975891,
+          "z": 1.4056953191757202,
+          "p": 0.08472881779555111,
+          "frames": 80
+        },
+        {
+          "hypothesis": "resample dy=0",
+          "S": -0.12802676603335345,
+          "z": -1.708803420815398,
+          "p": 0.9575106223444139,
+          "frames": 80,
+          "per_frame_mean": -0.12802679133802072,
+          "per_frame_frac_pos": 0.2125
+        },
+        {
+          "hypothesis": "resample dy=1",
+          "S": -0.2528158955989777,
+          "z": -3.4691484878471885,
+          "p": 0.9997500624843789,
+          "frames": 80,
+          "per_frame_mean": -0.25281590119874997,
+          "per_frame_frac_pos": 0.0875
+        },
+        {
+          "hypothesis": "resample dy=2",
+          "S": -0.14182553098396297,
+          "z": -1.9159584848931708,
+          "p": 0.9767558110472382,
+          "frames": 80,
+          "per_frame_mean": -0.14182550543399783,
+          "per_frame_frac_pos": 0.1875
+        },
+        {
+          "hypothesis": "resample dy=3",
+          "S": 0.157397330888306,
+          "z": 2.137026398439632,
+          "p": 0.015246188452886777,
+          "frames": 80,
+          "per_frame_mean": 0.1573973294696059,
+          "per_frame_frac_pos": 0.875
+        },
+        {
+          "hypothesis": "resample dy=4",
+          "S": 0.35280621016693686,
+          "z": 4.9189328571491995,
+          "p": 0.00024993751562109475,
+          "frames": 80,
+          "per_frame_mean": 0.3528062074908228,
+          "per_frame_frac_pos": 0.95
+        },
+        {
+          "hypothesis": "resample dy=5",
+          "S": 0.21766761667977957,
+          "z": 2.825096131849614,
+          "p": 0.0029992501874531365,
+          "frames": 80,
+          "per_frame_mean": 0.2176676130152983,
+          "per_frame_frac_pos": 0.875
+        },
+        {
+          "hypothesis": "resample dy=6",
+          "S": -0.04955303071321499,
+          "z": -0.7012281986252807,
+          "p": 0.7520619845038741,
+          "frames": 80,
+          "per_frame_mean": -0.049553013681710015,
+          "per_frame_frac_pos": 0.3625
+        },
+        {
+          "hypothesis": "resample dy=7",
+          "S": -0.17139046498588342,
+          "z": -2.406289859287615,
+          "p": 0.9930017495626093,
+          "frames": 80,
+          "per_frame_mean": -0.17139048385556163,
+          "per_frame_frac_pos": 0.1875
+        },
+        {
+          "hypothesis": "resample dy=8",
+          "S": -0.09194736807581157,
+          "z": -1.339829597982424,
+          "p": 0.9135216195951013,
+          "frames": 80,
+          "per_frame_mean": -0.09194734369343796,
+          "per_frame_frac_pos": 0.375
+        }
+      ],
+      "best_resample": {
+        "hypothesis": "resample dy=4",
+        "S": 0.35280621016693686,
+        "z": 4.9189328571491995,
+        "p": 0.00024993751562109475,
+        "frames": 80,
+        "per_frame_mean": 0.3528062074908228,
+        "per_frame_frac_pos": 0.95,
+        "p_bonferroni": 0.002249437640589853,
+        "n_hypotheses": 9
+      }
+    },
+    {
+      "video": "neg_mandelbrot.mp4",
+      "shape": [
+        720,
+        1280
+      ],
+      "fps": 24.0,
+      "tests": [
+        {
+          "hypothesis": "native-720p",
+          "S": 0.014679339652169275,
+          "z": 0.7297787665665673,
+          "p": 0.23394151462134466,
+          "frames": 192,
+          "per_frame_mean": 0.014679329577144637,
+          "per_frame_frac_pos": 0.5104166666666666
+        }
+      ]
+    },
+    {
+      "video": "neg_texture_pan.mp4",
+      "shape": [
+        720,
+        1280
+      ],
+      "fps": 24.0,
+      "tests": [
+        {
+          "hypothesis": "native-720p",
+          "S": 0.01022015953995025,
+          "z": 0.6309697338498984,
+          "p": 0.2606848287928018,
+          "frames": 192,
+          "per_frame_mean": 0.010220154676709623,
+          "per_frame_frac_pos": 0.5260416666666666
+        }
+      ]
+    },
+    {
+      "video": "neg_testsrc2.mp4",
+      "shape": [
+        720,
+        1280
+      ],
+      "fps": 24.0,
+      "tests": [
+        {
+          "hypothesis": "native-720p",
+          "S": -0.3585842128827072,
+          "z": -3.1584815415495373,
+          "p": 0.9990002499375156,
+          "frames": 192,
+          "per_frame_mean": -0.35858420493056925,
+          "per_frame_frac_pos": 0.06770833333333333
+        }
+      ]
+    },
+    {
+      "video": "ctrl_x264_white.mp4",
+      "shape": [
+        720,
+        1280
+      ],
+      "fps": 24.0,
+      "tests": [
+        {
+          "hypothesis": "native-720p",
+          "S": 0.011543605151299702,
+          "z": 0.46312162577555865,
+          "p": 0.31142214446388405,
+          "frames": 240,
+          "per_frame_mean": 0.011543589798377513,
+          "per_frame_frac_pos": 0.5208333333333334
+        }
+      ]
+    }
+  ]
+}

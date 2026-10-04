@@ -1,0 +1,257 @@
+{
+  "shape": [
+    720,
+    1280
+  ],
+  "sigma_highpass": 2.0,
+  "videos": [
+    "37299bcb-gemini_generated_video_498A9F35.mp4",
+    "778763a5-gemini_generated_video_2C5D4F75.mp4",
+    "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4"
+  ],
+  "family_rule": "ky=14m (m in 7,9,11,15,17) kx=0; (14m,+14) m=1 mod 4; (-14m,+14) m=3 mod 4",
+  "template_peak_to_peak_luma": 0.24497365727626313,
+  "template_rms_luma": 0.03484575430593731,
+  "leave_one_out": {
+    "37299bcb-gemini_generated_video_498A9F35.mp4": {
+      "mean_cos": 0.9551804669544037,
+      "n_positive": 11,
+      "n": 11,
+      "mean_coherence": 0.9815504433452653
+    },
+    "778763a5-gemini_generated_video_2C5D4F75.mp4": {
+      "mean_cos": 0.9090412197461084,
+      "n_positive": 11,
+      "n": 11,
+      "mean_coherence": 0.5127351746538262
+    },
+    "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": {
+      "mean_cos": 0.7462475240376466,
+      "n_positive": 10,
+      "n": 11,
+      "mean_coherence": 0.5138405617945456
+    }
+  },
+  "bins": [
+    {
+      "ky": 98,
+      "kx": 0,
+      "fy_cpp": 0.1361111111111111,
+      "fx_cpp": 0.0,
+      "f_cpp": 0.1361111111111111,
+      "period_px": 7.346938775510205,
+      "consensus_phase": 0.21293476246061205,
+      "amplitude_luma": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.021485380741836497,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.012856050360654714,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.06177582584168324
+      },
+      "amplitude_median": 0.021485380741836497,
+      "coherence": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.9904260560676039,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.2493418065726337,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.5778406757291137
+      }
+    },
+    {
+      "ky": 126,
+      "kx": 0,
+      "fy_cpp": 0.175,
+      "fx_cpp": 0.0,
+      "f_cpp": 0.175,
+      "period_px": 5.714285714285714,
+      "consensus_phase": -1.8701258197829422,
+      "amplitude_luma": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.01709415089338193,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.016239453266133505,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.04021661309866402
+      },
+      "amplitude_median": 0.01709415089338193,
+      "coherence": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.9877232618097614,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.6357605893007792,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.5855323821081976
+      }
+    },
+    {
+      "ky": 154,
+      "kx": 0,
+      "fy_cpp": 0.21388888888888888,
+      "fx_cpp": 0.0,
+      "f_cpp": 0.21388888888888888,
+      "period_px": 4.675324675324676,
+      "consensus_phase": 0.044773194207224795,
+      "amplitude_luma": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.0057842962507813145,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.001583689117378131,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.013429449976938868
+      },
+      "amplitude_median": 0.0057842962507813145,
+      "coherence": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.9464563734044864,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.30111288242413964,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.19007601183416353
+      }
+    },
+    {
+      "ky": 210,
+      "kx": 0,
+      "fy_cpp": 0.2916666666666667,
+      "fx_cpp": 0.0,
+      "f_cpp": 0.2916666666666667,
+      "period_px": 3.4285714285714284,
+      "consensus_phase": 0.374386632926146,
+      "amplitude_luma": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.008286116650133176,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.004344333978078705,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.014455612895590957
+      },
+      "amplitude_median": 0.008286116650133176,
+      "coherence": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.981447298284047,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.5616543927128974,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.5234105973085382
+      }
+    },
+    {
+      "ky": 238,
+      "kx": 0,
+      "fy_cpp": 0.33055555555555555,
+      "fx_cpp": 0.0,
+      "f_cpp": 0.33055555555555555,
+      "period_px": 3.0252100840336134,
+      "consensus_phase": -1.4623856495184209,
+      "amplitude_luma": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.006562122316127895,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.0026170854743183254,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.01097951908121984
+      },
+      "amplitude_median": 0.006562122316127895,
+      "coherence": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.9691451441813633,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.37325043092147403,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.5288895108646939
+      }
+    },
+    {
+      "ky": 126,
+      "kx": 14,
+      "fy_cpp": 0.175,
+      "fx_cpp": 0.0109375,
+      "f_cpp": 0.17534146373932777,
+      "period_px": 5.703157591330792,
+      "consensus_phase": -2.8197652930807724,
+      "amplitude_luma": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.02532666971861878,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.020961581162911393,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.0528718324934272
+      },
+      "amplitude_median": 0.02532666971861878,
+      "coherence": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.995344199070358,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.7690562165540562,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.6777832354028297
+      }
+    },
+    {
+      "ky": 182,
+      "kx": 14,
+      "fy_cpp": 0.25277777777777777,
+      "fx_cpp": 0.0109375,
+      "f_cpp": 0.25301429573152895,
+      "period_px": 3.9523458431814875,
+      "consensus_phase": -2.4972112076970565,
+      "amplitude_luma": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.007986424024082265,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.006054136451113118,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.012211268439521517
+      },
+      "amplitude_median": 0.007986424024082265,
+      "coherence": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.9773047664241816,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.6147975258239874,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.396657054418869
+      }
+    },
+    {
+      "ky": 238,
+      "kx": 14,
+      "fy_cpp": 0.33055555555555555,
+      "fx_cpp": 0.0109375,
+      "f_cpp": 0.3307364573416302,
+      "period_px": 3.0235553952465004,
+      "consensus_phase": -2.199281795908818,
+      "amplitude_luma": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.008465183824760603,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.0037056082403252037,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.013420462681417352
+      },
+      "amplitude_median": 0.008465183824760603,
+      "coherence": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.9820437217753519,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.5884393648527192,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.5902127973696647
+      }
+    },
+    {
+      "ky": -98,
+      "kx": 14,
+      "fy_cpp": -0.1361111111111111,
+      "fx_cpp": 0.0109375,
+      "f_cpp": 0.13654985710044237,
+      "period_px": 7.3233324533208926,
+      "consensus_phase": -0.2402308725616949,
+      "amplitude_luma": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.023357721305054643,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.02197443323767332,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.05369877616208968
+      },
+      "amplitude_median": 0.023357721305054643,
+      "coherence": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.9945236193757601,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.40536344742909175,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.5470054675469413
+      }
+    },
+    {
+      "ky": -154,
+      "kx": 14,
+      "fy_cpp": -0.21388888888888888,
+      "fx_cpp": 0.0109375,
+      "f_cpp": 0.2141683582987306,
+      "period_px": 4.669223819725787,
+      "consensus_phase": -0.7385867361878303,
+      "amplitude_luma": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.009005718698665307,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.005551337774085361,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.014669489599223534
+      },
+      "amplitude_median": 0.009005718698665307,
+      "coherence": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.9822020222474329,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.4760164088319727,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.40749030624795946
+      }
+    },
+    {
+      "ky": -210,
+      "kx": 14,
+      "fy_cpp": -0.2916666666666667,
+      "fx_cpp": 0.0109375,
+      "f_cpp": 0.2918716727445376,
+      "period_px": 3.4261632538600475,
+      "consensus_phase": -0.7838852012476623,
+      "amplitude_luma": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.011219346041741596,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.006810320808741678,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.015990501823966243
+      },
+      "amplitude_median": 0.011219346041741596,
+      "coherence": {
+        "37299bcb-gemini_generated_video_498A9F35.mp4": 0.9904384141575708,
+        "778763a5-gemini_generated_video_2C5D4F75.mp4": 0.6652938557683359,
+        "79688977-Generated_Video_October_03_2026_-_10_38PM.mp4": 0.6273481409090312
+      }
+    }
+  ]
+}
